@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="490.0" prefWidth="777.0" style="-fx-background-color: white;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+    <AnchorPane prefHeight="64.0" prefWidth="777.0" style="-fx-background-color: #32a852;">
+         <children>
+            <Label layoutX="305.0" layoutY="13.0" style="-fx-background-color: #32a852;" text="LẬP BIÊN BẢN" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="73.0" layoutY="235.0" text="Mô tả vi phạm:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="108.0" text="Ngày lập biên bản:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="DatePicker_DateFoundBBADD" layoutX="405.0" layoutY="146.0" prefHeight="37.0" prefWidth="288.0" />
+      <TextArea fx:id="TextArea_DecriptionBBADD" layoutX="73.0" layoutY="270.0" prefHeight="144.0" prefWidth="631.0" promptText="Không để trống" />
+      <Button fx:id="Button_Accept" layoutX="308.0" layoutY="435.0" mnemonicParsing="false" text="Lưu và nhập tang vật">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="TextField_CMNDBBADD" layoutX="69.0" layoutY="146.0" prefHeight="37.0" prefWidth="288.0" promptText="12  hoặc 9 chữ số" />
+      <Label layoutX="69.0" layoutY="108.0" text="CMND Người vi phạm: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_addNVP" layoutX="69.0" layoutY="199.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="288.0" text="Thêm người vi phạm" />
+   </children>
+</AnchorPane>

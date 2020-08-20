@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="764.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="848.0" layoutY="46.0" text="Thêm Tang vật" textFill="#52c94a">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="310.0" text="Tên tang vật: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="450.0" text="Trạng thái:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="380.0" text="Số lượng:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="520.0" text="Ghi chú:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="704.0" layoutY="380.0" text="Cơ sở lưu trữ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextField_NameTVADD" layoutX="170.0" layoutY="302.0" prefHeight="50.0" prefWidth="303.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../logoquochuy.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="170.0" layoutY="26.0" text="CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="68.0" prefHeight="58.0" prefWidth="497.0" text="BỘ GIAO THÔNG VẬN TẢI">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="363.0" layoutY="184.0" text="Thông tin tang vật thu giữ" textFill="#242524">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextField_NumberTVADD" layoutX="170.0" layoutY="372.0" prefHeight="50.0" prefWidth="303.0" />
+      <TextArea fx:id="TextArea_NoteTVADD" layoutX="174.0" layoutY="514.0" prefHeight="156.0" prefWidth="925.0" />
+      <Button fx:id="Button_Accept" layoutX="572.0" layoutY="704.0" mnemonicParsing="false" text="Xác nhận">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="ComboBox_CosoTVADD" editable="true" layoutX="862.0" layoutY="372.0" prefHeight="50.0" prefWidth="303.0" />
+      <TextField fx:id="TextField_IdTVADD" layoutX="862.0" layoutY="302.0" prefHeight="50.0" prefWidth="303.0" />
+      <Label layoutX="669.0" layoutY="310.0" text="Số BBVPHC/ QĐXPHC">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextField_StatusTVADD" layoutX="170.0" layoutY="439.0" prefHeight="50.0" prefWidth="303.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="744.0" prefWidth="777.0" style="-fx-background-color: white;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+    <AnchorPane prefHeight="64.0" prefWidth="777.0" style="-fx-background-color: #32a852;">
+         <children>
+            <Label layoutX="248.0" layoutY="13.0" style="-fx-background-color: #32a852;" text="CHI TIẾT QUYẾT ĐỊNH" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView_table" layoutX="350.0" layoutY="483.0" prefHeight="199.0" prefWidth="361.0">
+        <columns>
+          <TableColumn fx:id="col_diem" prefWidth="75.0" text="Điểm" />
+            <TableColumn fx:id="col_khoan" prefWidth="75.0" text="Khoản" />
+          <TableColumn fx:id="col_dieuLuat" prefWidth="75.0" text="Điều luật" />
+            <TableColumn fx:id="col_soTien" prefWidth="75.0" text="Số tiền" />
+        </columns>
+      </TableView>
+      <Label layoutX="552.0" layoutY="696.0" text="Tổng số tiền: ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="text_sum" layoutX="662.0" layoutY="697.0" text="0" />
+      <Label layoutX="89.0" layoutY="108.0" text="Số QDXPHC:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="437.0" layoutY="108.0" text="Số BBVPHC:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="153.0" text="Cán bộ lập quyết định:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="437.0" layoutY="280.0" text="Số CMND:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="280.0" text="Họ và tên:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="199.0" text="Ngày lập:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="314.0" text="Ngày sinh:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="351.0" text="Địa chỉ:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="386.0" text="Số điện thoại:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="481.0" text="Hạn nộp:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="516.0" text="Ghi chú:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textArea_ghiChu" layoutX="81.0" layoutY="548.0" prefHeight="134.0" prefWidth="243.0" />
+      <Text fx:id="text_QD" layoutX="232.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="text_BB" layoutX="519.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="text_hoTenCanBo" layoutX="232.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="text_ngayLap" layoutX="232.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="text_hanNop" layoutX="231.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="text_diaChi" layoutX="232.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="text_ngaySinh" layoutX="232.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="text_hoTenNguoiViPham" layoutX="232.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="text_soCMND" layoutX="519.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="text_soDienThoai" layoutX="232.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

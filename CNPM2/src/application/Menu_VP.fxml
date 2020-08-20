@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="741.0" prefWidth="1077.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+     <ImageView fitHeight="63.0" fitWidth="79.0" layoutX="26.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../logoquochuy.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="141.0" layoutY="19.0" text="CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM" textFill="#2c2c2c">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="39.0" text="BỘ GIAO THÔNG VẬN TẢI" textFill="#2b2b2b">
+         <font>
+            <Font name="System Bold" size="32.5" />
+         </font>
+      </Label>
+          <Line endX="297.0" layoutX="203.0" layoutY="86.0" startX="-100.0" /></Line>
+      <TableView fx:id="TableView_1" layoutY="150.0" prefHeight="542.0" prefWidth="1077.0">
+        <columns>
+            <TableColumn fx:id="Column_IdVP" minWidth="4.0" prefWidth="158.0" text="Mã vi phạm" />
+            <TableColumn fx:id="Column_DiemVP" minWidth="0.0" prefWidth="214.0" text="Điểm vi phạm" />
+            <TableColumn fx:id="Column_KhoanVP" prefWidth="231.0" text="Khoản vi phạm" />
+            <TableColumn fx:id="Column_DieuluatVP" prefWidth="212.0" text="Điều luật vi phạm" />
+            <TableColumn fx:id="Column_Fines" prefWidth="169.0" text="Mức phạt" />
+            <TableColumn fx:id="Column_Note" prefWidth="92.0" text="Ghi chú" />
+        </columns>
+      </TableView>
+      <TextField fx:id="TextField_Search" layoutX="14.0" layoutY="111.0" prefHeight="31.0" prefWidth="224.0" promptText="Tra cứu Mã vi phạm" />
+      <Button fx:id="Button_Add" layoutX="497.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="182.0" text="Thêm" />
+      <Button fx:id="Button_Delete" layoutX="881.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="182.0" text="Xóa" />
+      <Button fx:id="Button_Edit" layoutX="691.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="182.0" text="Cập nhật" />
+      <Label fx:id="Label_Title" layoutX="725.0" layoutY="29.0" text="QUY ĐỊNH XỬ PHẠT" textFill="#4684e3">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="211.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../iconfinder_icon-111-search_314478.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Button_PreviousPage" layoutX="14.0" layoutY="695.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="368.0" text="Previous" />
+      <Button fx:id="Button_NextPage" layoutX="689.0" layoutY="695.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="368.0" text="Next" />
+      <Label fx:id="Label_Tongsotrang" layoutX="539.0" layoutY="705.0" text="/ (Tong số trang)" />
+      <TextField fx:id="TextField_PageNumber" layoutX="505.0" layoutY="700.0" prefHeight="21.0" prefWidth="27.0" />
+   </children>
+</AnchorPane>

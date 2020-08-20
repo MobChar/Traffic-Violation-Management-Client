@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="651.0" prefWidth="1371.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+     <ImageView fitHeight="63.0" fitWidth="79.0" layoutX="26.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../logoquochuy.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="141.0" layoutY="19.0" text="CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM" textFill="#2c2c2c">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="39.0" text="BỘ GIAO THÔNG VẬN TẢI" textFill="#2b2b2b">
+         <font>
+            <Font name="System Bold" size="32.5" />
+         </font>
+      </Label>
+       <Line endX="297.0" layoutX="203.0" layoutY="86.0" startX="-100.0" />
+      <TableView fx:id="TableView_1" layoutX="4.0" layoutY="148.0" prefHeight="448.0" prefWidth="1360.0">
+        <columns>
+          <TableColumn fx:id="Column_IdQD" prefWidth="101.0" text="Số QĐXPHC" />
+            <TableColumn fx:id="Column_IdBL" prefWidth="118.0" text="Số biên lai" />
+            <TableColumn fx:id="Column_NameNL" prefWidth="255.0" text="Họ tên người lập" />
+            <TableColumn fx:id="Column_NameNP" minWidth="4.0" prefWidth="241.0" text="Họ tên người nộp" />
+            <TableColumn fx:id="Column_DateFound" prefWidth="186.0" text="Ngày lập biên lai" />
+            <TableColumn fx:id="Column_Decription" prefWidth="280.0" text="Lý do nộp phạt" />
+            <TableColumn fx:id="Column_Fines" maxWidth="400.0" prefWidth="178.0" text="Số tiền nộp phạt" />
+        </columns>
+      </TableView>
+      <TextField fx:id="TextField_Search" layoutX="14.0" layoutY="111.0" prefHeight="31.0" prefWidth="251.0" promptText="Tra cứu theo họ tên cán bộ lập biên lai" />
+      <Button fx:id="Button_Add" contentDisplay="BOTTOM" ellipsisString="" layoutX="741.0" layoutY="111.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="195.0" text="Thêm" textAlignment="CENTER" textFill="#0d0d0d" />
+      <Button fx:id="Button_Print" layoutX="1151.0" layoutY="111.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="195.0" text="In biên lai" />
+      <Label fx:id="Label_BienLai" layoutX="1001.0" layoutY="37.0" text="BIÊN LAI NỘP PHẠT" textFill="#ff8307">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="20.0" fitWidth="54.0" layoutX="235.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../iconfinder_icon-111-search_314478.png" />
+         </image>
+      </ImageView>
+      <Pagination fx:id="pagination_table" layoutX="4.0" layoutY="148.0" prefHeight="503.0" prefWidth="1360.0" />
+      <Button fx:id="Button_Edit" layoutX="947.0" layoutY="111.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="195.0" text="Hiệu chỉnh biên lai" />
+   </children>
+</AnchorPane>
