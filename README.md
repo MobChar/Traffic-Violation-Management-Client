@@ -1,5 +1,6 @@
 # Traffic-Violation-Management-Client
 
+A desktop software manage traffic violation used Java RMI connection to connect with server. I create this project for learing purpose only :))
 
 ### Set up
 - Server: https://github.com/MobChar/Traffic-Violation-Management-Server
